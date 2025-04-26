@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer ></script>
+</head>
+<body>
+    <!-- page of the website of a beginning artist with a calculator of the price for a painting depending on its size -->
+    <body>
+        <div class="welcome">
+            <h1>Добро пожаловать!</h1>
+            <p>Я начинающий художник. Здесь вы можете рассчитать стоимость вашей будущей картины.</p>
+        </div>
+        <div class="calculator">
+            <h1>Калькулятор цены</h1>
+            <label for="width">Ширина (см):</label>
+            <input type="number" id="width" placeholder="Введите ширину">
+            <label for="height">Высота (см):</label>
+            <input type="number" id="height" placeholder="Введите высоту">
+            <button onclick="calculatePrice()">Рассчитать цену</button>
+            <div class="result" id="result"></div>
+        </div>
+        <div class="gallery">
+            <h2>Примеры работ</h2>
+            <div class="gallery-images">
+                <img src="https://via.placeholder.com/150" alt="Пример работы 1" data-large="https://via.placeholder.com/800">
+                <img src="https://via.placeholder.com/150" alt="Пример работы 2" data-large="https://via.placeholder.com/800">
+                <img src="https://via.placeholder.com/150" alt="Пример работы 3" data-large="https://via.placeholder.com/800">
+                <img src="https://via.placeholder.com/150" alt="Пример работы 4" data-large="https://via.placeholder.com/800">
+                <img src="https://via.placeholder.com/150" alt="Пример работы 5" data-large="https://via.placeholder.com/800">
+                <img src="https://via.placeholder.com/150" alt="Пример работы 6" data-large="https://via.placeholder.com/800">
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 Начинающий художник. Все права защищены.
+        </footer>
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-controls">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+            <img src="" alt="Увеличенное изображение" id="lightbox-image">
+</body>
+</html>
